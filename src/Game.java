@@ -18,11 +18,14 @@ public class Game {
             System.out.println("Level gracza: " + player.getLevel());
             talkToRandomNpc();
 
+
             System.out.println("------------------------------------------");
         }
 
         System.out.println("Game Over");
     }
+
+
 
     public void addNpc(Npc npc){
         npcList.add(npc);

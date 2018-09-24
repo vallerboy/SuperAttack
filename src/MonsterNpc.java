@@ -1,14 +1,12 @@
 public class MonsterNpc extends Npc {
 
-    private int power;
-
-    public MonsterNpc(String name, int age, int power) {
-        super(name, age, false);
-        this. power = power;
+    public MonsterNpc(String name, int age, int attack) {
+        super(name, age, false, attack);
     }
 
     @Override
     public void action(Player player) {
-
+        System.out.println("Spotkałeś potwora! ");
+        player.setHealth(player.getHealth() - getAttack());
     }
 }

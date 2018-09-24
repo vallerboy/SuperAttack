@@ -12,6 +12,11 @@ public class Starter {
         game.addNpc(new AttackNpc("Zły gnom1", 56, false));
         game.addNpc(new AttackNpc("Zły gnom2", 56, true));
 
+
+        game.addNpc(new MonsterNpc("Zły potwór", 56, 3));
+        game.addNpc(new MonsterNpc("Zły potwór", 56, 100));
+
+
         game.start();
     }
 }
